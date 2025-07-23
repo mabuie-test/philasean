@@ -1,0 +1,52 @@
+/* Estilos globais */
+body {
+    background: #f8f9fa;
+    color: #212529;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+
+/* Formulários */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Botões */
+button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #003366;
+}
