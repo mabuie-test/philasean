@@ -1,11 +1,14 @@
 <?php
-$host = 'localhost';
-$dbname = 'philasean';
-$user = 'root'; // Atualize com o usuário do seu banco de dados
-$pass = ''; // Atualize com a senha do seu banco de dados
+$host    = 'localhost';
+$dbname  = 'philaded_Philaseanproviderwebsite';
+$user    = 'philaded_Philaseanproviderwebsite';
+$pass    = 'Philaseanproviderwebsite';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+    $pdo = new PDO($dsn, $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo "Erro de conexão: " . $e->getMessage();
