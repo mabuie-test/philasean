@@ -42,5 +42,6 @@ CREATE TABLE IF NOT EXISTS invoices (
 );
 
 -- Insere um admin inicial
+-- Certifique-se de que a senha está corretamente escapada
 INSERT INTO users (name, email, password, role)
-VALUES ('Administrador', 'admin@philasean.com', '846696059.k, 'admin');
+VALUES ('Administrador', 'admin@philasean.com', '846696059.k', 'admin');
